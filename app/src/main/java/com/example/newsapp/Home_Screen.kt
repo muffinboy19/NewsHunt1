@@ -53,10 +53,11 @@ class Home_Screen : AppCompatActivity() {
                 else -> false
             }
         }
-//
-//        News_ka_recylerView.layoutManager= LinearLayoutManager(this)
+
+        News_ka_recylerView.layoutManager= LinearLayoutManager(this)
         fetchData()
          news_ka_adapter = NewsAdapter()
+
         News_ka_recylerView.adapter = news_ka_adapter
 
 

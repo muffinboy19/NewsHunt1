@@ -18,6 +18,9 @@
             android:name=".splashScreen"
             android:exported="false" />
         <activity
+            android:name=".register_page"
+            android:exported="false" />
+        <activity
             android:name=".Home_Screen"
             android:exported="false" />
         <activity
