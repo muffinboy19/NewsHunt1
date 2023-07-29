@@ -21,10 +21,10 @@
             android:name=".register_page"
             android:exported="false" />
         <activity
-            android:name=".Home_Screen"
+            android:name=".logIn"
             android:exported="false" />
         <activity
-            android:name=".logIn"
+            android:name=".Home_Screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

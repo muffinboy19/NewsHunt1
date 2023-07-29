@@ -1,5 +1,6 @@
 package com.example.newsapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -25,6 +26,10 @@ class logIn : AppCompatActivity() {
                 Toast.makeText(this,
                     "Enter Credentials",
                     Toast.LENGTH_SHORT).show()
+            }
+            else{
+                val intent = Intent(this,Home_Screen::class.java)
+                startActivity(intent)
             }
         }
 
