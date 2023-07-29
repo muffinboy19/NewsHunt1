@@ -17,9 +17,6 @@
             android:name=".Home_Screen"
             android:exported="false" />
         <activity
-            android:name=".login_page"
-            android:exported="false" />
-        <activity
             android:name=".splashScreen"
             android:exported="true">
             <intent-filter>
@@ -28,9 +25,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
+
     </application>
 
 </manifest>
