@@ -16,13 +16,13 @@
         android:layout_marginEnd="166dp"
         android:layout_marginBottom="72dp"
         android:src="@drawable/anncounemetn"
-        app:layout_constraintBottom_toTopOf="@+id/editTextViewUsername"
+        app:layout_constraintBottom_toTopOf="@+id/registerUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextViewUsername"
+        android:id="@+id/registerUser"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginBottom="24dp"
@@ -32,7 +32,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/registerPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -43,12 +43,12 @@
         android:layout_marginHorizontal="72dp"
         android:layout_marginBottom="24dp"
         android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+        app:layout_constraintBottom_toTopOf="@+id/registerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/registerPassword"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginBottom="24dp"
@@ -58,12 +58,12 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextRepassowrd"
+        app:layout_constraintBottom_toTopOf="@+id/registerRePassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextRepassowrd"
+        android:id="@+id/registerRePassword"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginBottom="24dp"
@@ -78,7 +78,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/registerButton"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginBottom="194dp"

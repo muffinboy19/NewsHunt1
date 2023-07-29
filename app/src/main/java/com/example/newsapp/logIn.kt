@@ -17,20 +17,38 @@ class logIn : AppCompatActivity() {
         val loginPassword = findViewById<EditText>(R.id.loginPassword)
         val forgotPassword = findViewById<TextView>(R.id.forgotPassword)
         val loginButton = findViewById<Button>(R.id.loginButton)
+        val loginRegister = findViewById<TextView>(R.id.loginRegister)
+
 
 
         loginButton.setOnClickListener {
-
-
             if (loginName.text.isEmpty() || loginPassword.text.isEmpty()) {
-                Toast.makeText(this,
+                Toast.makeText(
+                    this,
                     "Enter Credentials",
-                    Toast.LENGTH_SHORT).show()
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                val intent = Intent(
+                    this,
+                    Home_Screen::class.java
+                )
+                startActivity(intent)
             }
             else{
                 val intent = Intent(this,Home_Screen::class.java)
                 startActivity(intent)
             }
+        }
+        forgotPassword.setOnClickListener {
+            Toast.makeText(this, "fuck off gaurav", Toast.LENGTH_SHORT).show()
+        }
+        loginRegister.setOnClickListener {
+            val intent = Intent(
+                this,
+                register_page::class.java
+            )
+            startActivity(intent)
         }
 
     }

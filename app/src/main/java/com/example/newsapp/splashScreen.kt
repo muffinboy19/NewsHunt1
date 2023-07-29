@@ -17,7 +17,7 @@ import android.widget.VideoView
         val splashScreenDurationMs = 3000 // 2 seconds (adjust as needed)
         Handler().postDelayed({
             // Start the main activity
-            val intent = Intent(this, Home_Screen::class.java)
+            val intent = Intent(this, logIn::class.java)
             startActivity(intent)
 
             // Finish the splash screen activity so that the user cannot go back to it
