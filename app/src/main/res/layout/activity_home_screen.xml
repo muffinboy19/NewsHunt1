@@ -12,12 +12,13 @@
             android:layout_width="match_parent"
             android:layout_height="680dp"
             android:layout_weight="0"
-            android:background="#F2F7F2">
+            android:background="#FFFFFF">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout"
                     android:layout_width="match_parent"
                     android:layout_height="729dp"
-                    android:background="#80C8C2C2"
+                    android:background="#FFFFFF"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -26,27 +27,28 @@
 
                         <ImageView
                             android:id="@+id/imageView4"
-                            android:layout_width="300dp"
+                            android:layout_width="320dp"
                             android:layout_height="160dp"
                             android:layout_marginHorizontal="40dp"
                             android:layout_marginTop="12dp"
-                            android:background="@drawable/image_round"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/mateusz_stepien__dqcomn4ilc_unsplash"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/jindall"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.509"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/ss" />
+                            app:layout_constraintTop_toBottomOf="@+id/searchBarHomeScreen" />
 
 
                         <SearchView
-                            android:id="@+id/ss"
-                            android:layout_width="300dp"
-                            android:layout_height="48dp"
+                            android:id="@+id/searchBarHomeScreen"
+                            android:layout_width="320dp"
+                            android:layout_height="32dp"
+                            android:queryHint="Search..."
+
+                            style="@style/CustomSearchViewStyle"
                             android:layout_marginHorizontal="0dp"
                             android:layout_marginTop="16dp"
-                            android:background="@drawable/shadow_rounded"
-                            android:backgroundTint="@color/white"
+                            android:background="@drawable/search_bar"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -56,8 +58,8 @@
                             android:id="@+id/textView4"
                             android:layout_width="200dp"
                             android:layout_height="30dp"
-                            android:layout_marginStart="26dp"
-                            android:layout_marginTop="13dp"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="24dp"
                             android:fontFamily="@font/popinsss"
                             android:text="Categories"
                             android:textColor="@color/def"
@@ -72,7 +74,7 @@
                             android:id="@+id/textView2"
                             android:layout_width="200dp"
                             android:layout_height="30dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="24dp"
                             android:fontFamily="@font/popinsss"
                             android:text="TrendingNews"
                             android:textColor="@color/def"

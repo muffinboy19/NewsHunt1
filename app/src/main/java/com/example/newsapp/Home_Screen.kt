@@ -2,6 +2,8 @@ package com.example.newsapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
+import android.widget.ImageView
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -31,6 +33,15 @@ class Home_Screen : AppCompatActivity() {
         categori.layoutManager=LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
         categori.adapter=IconAdapter(dataArray)
 
+
+        val searchBarHomeScreen = findViewById<SearchView>(R.id.searchBarHomeScreen)
+        val searchIconId = resources.getIdentifier("android:id/search_mag_icon",null,null)
+        val searchIcon = searchBarHomeScreen.findViewById<ImageView>(searchIconId)
+        searchIcon.setImageResource(R.drawable.searcg)
+        searchBarHomeScreen.isIconifiedByDefault = false
+        val searchPlateId = searchBarHomeScreen.context.resources.getIdentifier("android:id/search_src_text", null, null)
+        val searchPlate = searchBarHomeScreen.findViewById<EditText>(searchPlateId)
+        searchPlate.hint = "Search..."
 
 
 

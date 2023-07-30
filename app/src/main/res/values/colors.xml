@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="def">#F83737</color>
     <color name="bacg">#80FAFAFA</color>
+    <color name="transparent">#00FFFFFF</color>
 </resources>

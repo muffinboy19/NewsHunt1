@@ -28,17 +28,15 @@ class logIn : AppCompatActivity() {
                     "Enter Credentials",
                     Toast.LENGTH_SHORT
                 ).show()
-            } else {
+            }
+            else {
                 val intent = Intent(
                     this,
                     Home_Screen::class.java
                 )
                 startActivity(intent)
             }
-            else{
-                val intent = Intent(this,Home_Screen::class.java)
-                startActivity(intent)
-            }
+
         }
         forgotPassword.setOnClickListener {
             Toast.makeText(this, "fuck off gaurav", Toast.LENGTH_SHORT).show()
