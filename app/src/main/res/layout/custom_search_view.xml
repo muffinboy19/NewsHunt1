@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.SearchView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customSearchView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:queryHint="Search"
+    android:background="@drawable/custom_searchview_background"
+    android:drawableRight="@drawable/searcg" />

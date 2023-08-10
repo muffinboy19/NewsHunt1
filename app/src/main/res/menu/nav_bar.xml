@@ -4,12 +4,10 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home"
         android:icon="@drawable/public_fill0_wght400_grad0_opsz48"/>
 
     <item
         android:id="@+id/iiita"
-        android:title="iiita"
         android:icon="@drawable/apartment_fill0_wght400_grad0_opsz48"/>
 
 

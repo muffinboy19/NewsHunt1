@@ -7,9 +7,16 @@
     </style>
     <style name="CustomSearchViewStyle" parent="Widget.AppCompat.SearchView">
         <item name="android:gravity">right</item>
+        <item name="android:textSize">16sp</item>
+        <item name="editTextStyle">@style/Nounder</item>
         <item name="queryBackground">@color/transparent</item>
 
     </style>
 
     <style name="Theme.NewsApp" parent="Base.Theme.NewsApp" />
+
+    <style name="Nounder" parent="Widget.AppCompat.EditText">
+        <item name="background">@null</item>
+    </style>
+
 </resources>

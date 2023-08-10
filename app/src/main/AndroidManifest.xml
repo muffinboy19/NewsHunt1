@@ -15,6 +15,23 @@
         android:theme="@style/Theme.NewsApp"
         tools:targetApi="31">
         <activity
+            android:name=".collegeNews"
+            android:exported="false" />
+        <activity
+            android:name=".newsShowArea"
+            android:label="Article"
+            android:parentActivityName=".Home_Screen" /> <!-- Replace with the parent activity -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Home_Screen" /> <!-- Replace with the parent activity -->
+        <activity
+            android:name=".searchedNews"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".splashScreen"
             android:exported="false" />
         <activity
@@ -32,6 +49,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
